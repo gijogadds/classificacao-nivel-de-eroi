@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - Wikipédia, a enciclopédia livre (Redesign)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header" role="banner">
+        <div class="logo">
+            <span class="logo-icon">W</span>
+            <span class="logo-text">Wikipédia<br><small>A enciclopédia livre</small></span>
+        </div>
+        <div class="search-bar" role="search">
+            <input type="search" placeholder="Pesquisar na Wikipédia..." aria-label="Pesquisar">
+            <button aria-label="Buscar" type="button">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+        </div>
+        <div class="user-actions">
+            <a href="#" aria-label="Criar conta">Criar conta</a>
+            <a href="#" aria-label="Entrar" class="btn-primary">Entrar</a>
+        </div>
+    </header>
+
+    <div class="layout-container">
+        <nav class="sidebar" aria-label="Navegação Principal">
+            <ul class="nav-list">
+                <li><a href="#inicio" aria-current="page">Página principal</a></li>
+                <li><a href="#conteudo">Conteúdo destacado</a></li>
+                <li><a href="#eventos">Eventos atuais</a></li>
+                <li><a href="#aleatoria">Página aleatória</a></li>
+            </ul>
+            
+            <h3 class="sidebar-title">Índice</h3>
+            <ul class="toc-list">
+                <li><a href="#historia">História</a></li>
+                <li><a href="#recursos">Novos Recursos</a></li>
+                <li><a href="#apis">APIs do HTML5</a></li>
+                <li><a href="#referencias">Referências</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content" id="main-content" role="main">
+            <article>
+                <header class="article-header">
+                    <h1 id="inicio">HTML5</h1>
+                    <p class="article-subtitle">Origem: Wikipédia, a enciclopédia livre.</p>
+                </header>
+
+                <div class="article-body">
+                    <p><strong>HTML5</strong> (Hypertext Markup Language, versão 5) é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet, originalmente proposto por Opera Software. É a quinta versão da linguagem HTML.</p>
+                    
+                    <aside class="infobox" aria-labelledby="infobox-title">
+                        <h2 id="infobox-title" class="sr-only">Informações Rápidas</h2>
+                        <div class="infobox-header">HTML5</div>
+                        <div class="infobox-content">
+                            <figure>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="Logotipo do HTML5" loading="lazy">
+                                <figcaption>Logotipo oficial do HTML5</figcaption>
+                            </figure>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Desenvolvedor</th>
+                                        <td>WHATWG</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Lançamento inicial</th>
+                                        <td>22 de janeiro de 2008</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Última versão</th>
+                                        <td>HTML Living Standard</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Tipo de formato</th>
+                                        <td>Linguagem de marcação</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </aside>
+
+                    <h2 id="historia">História</h2>
+                    <p>O Web Hypertext Application Technology Working Group (WHATWG) começou a trabalhar no novo padrão em 2004, numa época em que o World Wide Web Consortium (W3C) estava focando desenvolvimentos futuros em XHTML 2.0, e o HTML 4.01 não tinha sido atualizado desde 2000.</p>
+                    <p>Em 2009, o W3C admitiu que a direção do XHTML 2.0 estava errada e decidiu descontinuar o desenvolvimento desta especificação. Com o esforço focado agora inteiramente no HTML5, ele foi formalmente publicado como Recomendação pelo W3C em outubro de 2014.</p>
+
+                    <h2 id="recursos">Novos Recursos e Semântica</h2>
+                    <p>O HTML5 introduz elementos e atributos que refletem o uso típico em sites modernos. Alguns deles são novos elementos semânticos substitutos para usos comuns de <code>&lt;div&gt;</code> genérico:</p>
+                    <ul>
+                        <li><code>&lt;article&gt;</code>: Representa uma composição independente, de forma que faça sentido ser lida fora de contexto.</li>
+                        <li><code>&lt;section&gt;</code>: Representa uma seção genérica de um documento ou aplicativo, servindo para organizar o conteúdo.</li>
+                        <li><code>&lt;nav&gt;</code>: Representa uma seção do documento destinada à navegação com links principais.</li>
+                        <li><code>&lt;header&gt;</code> e <code>&lt;footer&gt;</code>: Representam, respectivamente, o cabeçalho e o rodapé da página ou de seções independentes.</li>
+                        <li><code>&lt;aside&gt;</code>: Representa uma parte da página com conteúdo marginalmente relacionado (como uma barra lateral ou caixa de informações).</li>
+                    </ul>
+
+                    <h2 id="apis">APIs do HTML5</h2>
+                    <p>Além da marcação avançada com novas tags e foco total em acessibilidade, o HTML5 especifica APIs de <i>scripting</i> que podem ser usadas com JavaScript, tornando a web uma plataforma poderosa para aplicações ricas. Algumas destas APIs incluem:</p>
+                    
+                    <div class="cards-grid">
+                        <section class="card" aria-labelledby="card-geo">
+                            <h3 id="card-geo">Geolocalização</h3>
+                            <p>Permite compartilhar a localização física do usuário com o aplicativo web de forma segura, com o consentimento do utilizador.</p>
+                        </section>
+                        <section class="card" aria-labelledby="card-canvas">
+                            <h3 id="card-canvas">Canvas e WebGL</h3>
+                            <p>Permite renderização dinâmica via hardware, por script, de formas 2D e modelos 3D diretamente no navegador sem uso de plugins externos.</p>
+                        </section>
+                        <section class="card" aria-labelledby="card-storage">
+                            <h3 id="card-storage">Armazenamento Web</h3>
+                            <p>Fornece mecanismos como o LocalStorage e SessionStorage para armazenar pares chave/valor de forma mais rápida e segura que os tradicionais cookies.</p>
+                        </section>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <footer class="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <p>Esta página foi modificada pela última vez em 31 de agosto de 2026, às 14:20.</p>
+            <p>Texto disponibilizado sob a Licença Creative Commons Atribuição-CompartilhaIgual; pode estar sujeito a condições adicionais.</p>
+            <ul class="footer-links" aria-label="Links do Rodapé">
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="#">Sobre a Wikipédia</a></li>
+                <li><a href="#">Avisos gerais</a></li>
+                <li><a href="#">Desenvolvedores</a></li>
+                <li><a href="#">Estatísticas</a></li>
+                <li><a href="#">Acessibilidade</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
