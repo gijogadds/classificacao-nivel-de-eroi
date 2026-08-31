@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Saúde+ | Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu -->
+    <nav class="menu">
+        <a href="index.html">Página Principal</a>
+        <a href="sobre.html">Sobre a clínica</a>
+        <a href="horarios.html">Horário de Atendimento</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Contato da Clínica">
+    </header>
+
+    <!-- Content -->
+    <main class="content">
+        <h1>Entre em Contato</h1>
+        <p>Ficaremos felizes em ajudar. Entre em contato conosco ou venha nos visitar!</p>
+        
+        <div class="contact-info">
+            <h2>Informações de Contato</h2>
+            <ul>
+                <li><strong>Celular:</strong> (11) 98765-4321</li>
+                <li><strong>WhatsApp:</strong> <a href="#">(11) 98765-4321</a></li>
+                <li><strong>Endereço Completo:</strong> Rua da Saúde, 123 - Bairro Centro, São Paulo/SP - CEP: 01000-000</li>
+            </ul>
+        </div>
+        
+        <h2>Nossa Localização</h2>
+        <div class="mapa">
+            <!-- Iframe do Google Maps -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1437199427187!2d-46.654877385022135!3d-23.563294367554904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8e88e89cb%3A0x86616e257ebc441c!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1611090333333!5m2!1spt-BR!2sbr" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <h2>Fale Conosco</h2>
+        <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+            
+            <div class="form-buttons">
+                <button type="submit">Enviar Mensagem</button>
+                <button type="reset">Limpar Formulário</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p><strong>Clínica Saúde+</strong></p>
+        <p>Telefone: (11) 1234-5678 | E-mail: contato@clinicasaude.com.br</p>
+        <p>Endereço: Rua da Saúde, 123 - Centro, São Paulo/SP</p>
+    </footer>
+</body>
+</html>
